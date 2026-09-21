@@ -557,3 +557,32 @@ footer p {
     font-weight: bold;
     text-decoration: none;
 }
+
+/* Leave room for spaces between inline-block cards */
+.education-card {
+    margin-right: 40px;
+}
+
+.project-card,
+.experience-card,
+.blog-card,
+.skill-box,
+.certificate-card {
+    margin-right: 30px;
+}
+
+.education-card {
+    min-height: 250px;
+}
+
+.education-card h3 {
+    min-height: 68px;
+}
+
+@media print {
+    #projects,
+    #blogs,
+    #certifications {
+        break-before: page;
+    }
+}
